@@ -106,7 +106,6 @@ void SharedDocument::remove_client(websocket::stream<tcp::socket>* ws)
     if (!boardManager.getAccessCount(board)) {
         DatabaseConnector* db = DatabaseConnector::getInstance();
 
-        //std::string insertQuery = "INSERT INTO boards (version, content) VALUES ('" + std::to_string(board_versions[board].second) + "', '" + board_versions[board].first + "')";
         int id;
         if (board == "board1") id = 1;
         else if (board == "board2") id = 2;
