@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>CodeCollab - Вход</title>
+    <link rel="stylesheet" href="login_styles.css">
+</head>
+<body>
+    <div class="login-container">
+        <h1>CodeCollab</h1>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="boardSelect">Доска:</label>
+                <select id="boardSelect">
+                    <option value="board1">Общая доска #1</option>
+                    <option value="board2">Общая доска #2</option>
+                </select>
+            </div>
+
+            <div class="form-group" id="boardPasswordGroup">
+                <label for="boardPassword">Пароль доски:</label>
+                <input type="password" id="boardPassword">
+            </div>
+
+            <div class="form-group">
+                <label for="username">Ваш ник:</label>
+                <input type="text" id="username" required>
+            </div>
+
+            <button type="submit">Присоединиться</button>
+            <div class="error" id="errorMessage"></div>
+        </form>
+    </div>
+
+    <script src="login_script.js"></script>
+</body>
+</html>

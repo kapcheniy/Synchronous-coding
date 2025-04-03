@@ -1,0 +1,14 @@
+*.exe
+*.o
+*.dll
+*.so
+*.a
+
+build/
+bin/
+obj/
+
+.vscode/
+.idea/
+
+.DS_Store
